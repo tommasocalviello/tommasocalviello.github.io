@@ -1,9 +1,9 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [main, master]  # Triggers whether your default branch is main or master
-  workflow_dispatch:
+  # push:
+  #   branches: [main, master]  # Temporarily disabled to prevent auto-deploying
+  workflow_dispatch:           # Allows manual deployment when you choose
 
 permissions:
   contents: read
@@ -29,7 +29,6 @@ jobs:
           node-version: 20
           cache: pnpm
 
-      # Using --no-frozen-lockfile prevents version mismatch errors with v0's lockfile
       - run: pnpm install --no-frozen-lockfile
 
       - run: pnpm build
