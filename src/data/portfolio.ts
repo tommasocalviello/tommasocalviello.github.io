@@ -176,3 +176,49 @@ export const presentations: Presentation[] = [
     year: "2024",
   },
 ]
+
+export type Award = {
+  year: string
+  name: string
+  detail: string
+}
+
+export const awards: Award[] = [
+  {
+    year: "2026",
+    name: "CSC Academic All-American — Second Team",
+    detail: "National recognition for combined athletic and academic excellence.",
+  },
+  {
+    year: "2026",
+    name: "Samuel F. Hulbert Outstanding BME Graduate Award",
+    detail: "Top graduating biomedical engineer, Rose-Hulman.",
+  },
+  {
+    year: "2025",
+    name: "Carl Wischmeyer Medal",
+    detail: "Awarded for outstanding academic achievement.",
+  },
+  {
+    year: "2024",
+    name: "Paul N. Bogart Prize",
+    detail: "Recognizing excellence in engineering coursework.",
+  },
+  {
+    year: "2023",
+    name: "Heminway Bronze Medal",
+    detail: "Awarded to the top-ranked student in the class.",
+  },
+]
+
+export type Involvement = {
+  role: string
+  org: string
+}
+
+export const involvement: Involvement[] = [
+  { role: "Vice President", org: "Tau Beta Pi Engineering Honor Society" },
+  { role: "Executive Board", org: "Alpha Tau Omega" },
+  { role: "Team Captain", org: "Rose-Hulman Varsity Swimming & Diving" },
+  { role: "Teaching Assistant", org: "Deep Learning · Database Systems · Diff. Eq." },
+]
