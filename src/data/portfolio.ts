@@ -2,10 +2,10 @@ export const profile = {
   name: "Tommaso Calviello",
   status: "BME Ph.D. Student @ Johns Hopkins",
   photo: "profile.png",
-  email: "calviet@rose-hulman.edu",
+  email: "tcalvie1@jh.edu",
   phone: "+1 (812) 223-2449",
   github: "https://github.com/tommasocalviello",
-  linkedin: "https://www.linkedin.com/in/tommasocalviello",
+  linkedin: "https://www.linkedin.com/in/tommaso-calviello/",
   cv: "#",
   bioLead:
     "ML researcher",
