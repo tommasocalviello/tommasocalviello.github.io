@@ -60,7 +60,7 @@ export function Footer() {
           </div>
         </div>
         <p className="mt-5 text-center font-mono text-xs text-muted">
-          © {new Date().getFullYear()} {profile.name}. Built for the bedside.
+          © {new Date().getFullYear()} {profile.name}.
         </p>
       </div>
     </footer>

@@ -157,23 +157,21 @@ export type Presentation = {
   venue: string
   title: string
   year: string
+  type: "Poster" | "Oral" | "Competition" | "Design Pitch"
 }
 
 export const presentations: Presentation[] = [
   {
     venue: "Society for Neuroscience (SfN)",
-    title: "BCI-SSVEP decoding for neural interfaces",
+    title: "Machine Learning Strategies to Reduce the Effects of Auditory and Visual Distractors on a Steady-State Visual Evoked Potential Brain-Computer Interface Application",
     year: "2024",
+    type: "Poster",
   },
   {
-    venue: "BMES × Medtronic",
+    venue: "BMES × Medtronic Design Competition",
     title: "NeuroScan.AI — multi-modal tumor segmentation",
     year: "2025",
-  },
-  {
-    venue: "Rocky Mountain Bioengineering Symposium (60th)",
-    title: "MATLAB interactive learning tool for K–12 BME education",
-    year: "2024",
+    type: "Competition", // or "Oral"
   },
 ]
 
