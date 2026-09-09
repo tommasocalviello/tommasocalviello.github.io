@@ -1,6 +1,6 @@
 export const profile = {
   name: "Tommaso Calviello",
-  status: "Incoming Ph.D. Student @ Johns Hopkins BME",
+  status: "BME Ph.D. Student @ Johns Hopkins",
   photo: "profile.png",
   email: "calviet@rose-hulman.edu",
   phone: "+1 (812) 223-2449",
@@ -8,21 +8,20 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/tommasocalviello",
   cv: "#",
   bioLead:
-    "Biomedical engineer and data scientist building clinical AI systems that reach the bedside.",
-  bio: "Double major in Biomedical Engineering & Data Science with a 4.0 GPA from Rose-Hulman Institute of Technology, and an incoming BME Ph.D. student at Johns Hopkins. My work sits at the intersection of AI in Medicine, Medical Imaging, and AI-driven clinical systems — from tumor segmentation to cuffless blood-pressure estimation and autonomous navigation.",
+    "ML researcher",
+  bio: "PhD student at the Johns Hopkins University School of Medicine researching trustworthy machine learning for clinical settings. Previously a software engineer at Thalasso Therapeutics, where I spent over a year developing 3D reconstruction pipelines for medical devices under regulated design controls.",
 }
 
 export const stack: string[] = [
-  "PyTorch",
-  "Transformers",
-  "U-Net",
-  "Medical Imaging · DICOM/NIfTI",
-  "Biosignal Processing",
-  "Embedded Systems",
-  "CNNs",
-  "Sensor Fusion",
-  "Gradient Boosting",
-  "Stereo Vision",
+  "3D Computer Vision & Reconstruction",
+  "Medical Image Segmentation (U-Net)",
+  "Medical Imaging (DICOM / NIfTI)",
+  "Biosignal Processing (EEG / PPG)",
+  "Trustworthy ML & Calibration",
+  "Sensor Fusion & Transformers",
+  "Design Controls & V&V (IEC 62304 / ISO 13485)",
+  "Python & C++",
+  "Stereo Vision & Perception",
 ]
 
 export type Milestone = {
@@ -34,40 +33,34 @@ export type Milestone = {
 
 export const milestones: Milestone[] = [
   {
-    year: "Fall 2026",
+    year: "August 2026",
     title: "Starting Ph.D. at Johns Hopkins University",
     detail: "Biomedical Engineering — AI in Medicine & Clinical Systems.",
-    tag: "Ph.D.",
+    tag: "Academia",
   },
   {
-    year: "2026",
+    year: "May 2026",
+    title: "Graduated from Rose-Hulman Institute of Technology",
+    detail: "Graduated with a Double Major in Biomedical Engineering and Data Science and Artificial Intelligence ",
+    tag: "Academia",
+  },
+  {
+    year: "March 2026",
     title: "1st Place National Champions",
     detail: "NCAA Final Four Analytics Challenge.",
-    tag: "Champion",
+    tag: "Project",
   },
   {
-    year: "2026",
-    title: "Mira Awards Finalist",
-    detail: "Recognized for Resper Care — cuffless blood pressure estimation.",
-    tag: "Finalist",
-  },
-  {
-    year: "2025",
+    year: "October 2025",
     title: "Top 3 National Finalist (BMES × Medtronic)",
     detail: "NeuroScan.AI — multi-modal brain tumor segmentation.",
-    tag: "Top 3",
+    tag: "Project",
   },
   {
-    year: "2025",
-    title: "Top 8 National Finalist (NASA)",
-    detail: "Lunar Autonomy Challenge — ML hazard avoidance.",
-    tag: "Top 8",
-  },
-  {
-    year: "2024",
-    title: "Society for Neuroscience (SfN)",
-    detail: "BCI-SSVEP research presentation.",
-    tag: "Presentation",
+    year: "February 2025",
+    title: "Software Engineer at Thalasso Therapeutics",
+    detail: "Working on 3D reconstruction pipelines for medical imaging",
+    tag: "Industry",
   },
 ]
 
@@ -157,14 +150,7 @@ export const research: Research[] = [
     focus:
       "Evolutionary and meta-learning approaches to adaptive network architectures.",
     tags: ["Evolutionary Algorithms", "Meta-Learning"],
-  },
-  {
-    lab: "Thalasso Therapeutics",
-    role: "3D Reconstruction",
-    focus:
-      "3D reconstruction pipelines for medical devices under regulated design controls.",
-    tags: ["3D Reconstruction", "ISO 13485", "FDA 510(k)"],
-  },
+  }
 ]
 
 export type Presentation = {
@@ -189,50 +175,4 @@ export const presentations: Presentation[] = [
     title: "MATLAB interactive learning tool for K–12 BME education",
     year: "2024",
   },
-]
-
-export type Award = {
-  year: string
-  name: string
-  detail: string
-}
-
-export const awards: Award[] = [
-  {
-    year: "2026",
-    name: "CSC Academic All-American — Second Team",
-    detail: "National recognition for combined athletic and academic excellence.",
-  },
-  {
-    year: "2026",
-    name: "Samuel F. Hulbert Outstanding BME Graduate Award",
-    detail: "Top graduating biomedical engineer, Rose-Hulman.",
-  },
-  {
-    year: "2025",
-    name: "Carl Wischmeyer Medal",
-    detail: "Awarded for outstanding academic achievement.",
-  },
-  {
-    year: "2024",
-    name: "Paul N. Bogart Prize",
-    detail: "Recognizing excellence in engineering coursework.",
-  },
-  {
-    year: "2023",
-    name: "Heminway Bronze Medal",
-    detail: "Awarded to the top-ranked student in the class.",
-  },
-]
-
-export type Involvement = {
-  role: string
-  org: string
-}
-
-export const involvement: Involvement[] = [
-  { role: "Vice President", org: "Tau Beta Pi Engineering Honor Society" },
-  { role: "Executive Board", org: "Alpha Tau Omega" },
-  { role: "Team Captain", org: "Rose-Hulman Varsity Swimming & Diving" },
-  { role: "Teaching Assistant", org: "Deep Learning · Database Systems · Diff. Eq." },
 ]
