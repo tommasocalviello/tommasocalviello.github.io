@@ -1,8 +1,8 @@
 name: Deploy to GitHub Pages
 
 on:
-  # push:
-  #   branches: [main, master]  # Temporarily disabled to prevent auto-deploying
+  push:
+    branches: [main, master]  # Temporarily disabled to prevent auto-deploying
   workflow_dispatch:           # Allows manual deployment when you choose
 
 permissions:
